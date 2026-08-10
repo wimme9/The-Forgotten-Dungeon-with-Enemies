@@ -1,0 +1,84 @@
+{
+    "assets": {
+        "audio": [
+            { "key": "ture", "path": "true.mp3" },
+            { "key": "fale", "path": "fale.mp3" },
+            { "key": "ston", "path": "ston.mp3" },
+            { "key": "gameover", "path": "gameover.mp3" },
+            { "key": "win", "path": "win.mp3" }
+        ],
+        "images": [
+            { "key": "tiles", "path": "world_tileset.png" },
+            { "key": "door", "path": "door.png" },
+            { "key": "dooropen", "path": "dooropen.png" },
+            { "key": "ground", "path": "backg.png" },
+            { "key": "fire", "path": "fire.png" },
+            { "key": "ston", "path": "ston.png" },
+            { "key": "npc", "path": "npc.png" },
+            { "key": "heep", "path": "heep.png" },
+            { "key": "heepopen", "path": "heepopen.png" },
+            { "key": "book1", "path": "book1.png" },
+            { "key": "book2", "path": "book2.png" },
+            { "key": "book3", "path": "book3.png" },
+            { "key": "book4", "path": "book4.png" },
+            { "key": "book5", "path": "book5.png" }
+        ],
+        "tilemap": {
+            "key": "map",
+            "path": "DungeonMap.tmj"
+        },
+        "spritesheet": {
+            "key": "player",
+            "path": "sprites/AnimationSheet_Character.png",
+            "frameWidth": 32,
+            "frameHeight": 32
+        }
+    },
+    "playerSpawn": { "x": 100, "y": 500 },
+    "exitDoor": { "x": 768, "y": 100 },
+    "gates": [
+        { "x": 768, "y": 300, "width": 200, "height": 20 },
+        { "x": 768, "y": 500, "width": 200, "height": 20 },
+        { "x": 768, "y": 700, "width": 200, "height": 20 }
+    ],
+    "stones": [
+        { "x": 400, "y": 800 },
+        { "x": 500, "y": 800 },
+        { "x": 600, "y": 800 }
+    ],
+    "chests": [
+        { "x": 200, "y": 900 },
+        { "x": 400, "y": 900 },
+        { "x": 600, "y": 900 }
+    ],
+    "npcData": {
+        "x": 768,
+        "y": 850,
+        "dialogues": {
+            "default": [
+                "สวัสดีนักเดินทาง เจ้ายังผ่านทางนี้ไม่ได้",
+                "จงไปไขปริศนาห้องต่างๆ ให้เรียบร้อยเสียก่อน"
+            ],
+            "quest3": [
+                "ยอดเยี่ยมมาก! เจ้าปลดล็อกกลไกทั้งหมดได้แล้ว",
+                "เบื้องหน้าคือห้องสมบัติ จงเลือกเปิดหีบให้ถูกใบ ระวังตัวด้วยล่ะ!"
+            ]
+        }
+    },
+    "quests": {
+        "stage0": "เควส: ไขปริศนาชั้นหนังสือเพื่อเปิดทาง",
+        "stage1": "เควส: ไขปริศนากองไฟ",
+        "stage2": "เควส: หมุนศิลาโบราณให้ถูกต้อง",
+        "stage3": "เควส: ไปพบ NPC เพื่อรับคำแนะนำ",
+        "stage4": "เควส: ตามหากุญแจในหีบสมบัติ",
+        "stage5": "เควส: มุ่งหน้าไปที่ประตูทางออก!"
+    },
+    "enemies": {
+        "name": "Enemies",
+        "objects": [
+            { "x": 350, "y": 300 },
+            { "x": 350, "y": 800 },
+            { "x": 1200, "y": 850 }
+        ]
+    }
+}
