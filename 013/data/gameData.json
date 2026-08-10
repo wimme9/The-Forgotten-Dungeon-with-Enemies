@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "spritesheets": [
+      { "key": "character", "path": "sprite/character.png", "frameWidth": 32, "frameHeight": 32 },
+      { "key": "torchAnimated", "path": "sprite/Torch Animated.png", "frameWidth": 64, "frameHeight": 64 },
+      { "key": "chestAnimated", "path": "sprite/Wooden Chest 2 - Spritesheet.png", "frameWidth": 48, "frameHeight": 32 },
+      { "key": "orcAnimated", "path": "sprite/Orc.png", "frameWidth": 16, "frameHeight": 16 }
+    ],
+    "images": [
+      { "key": "bookAsset", "path": "sprite/book.png" },
+      { "key": "dragonAsset", "path": "sprite/dragon.png" },
+      { "key": "npcAsset", "path": "sprite/npc.png" },
+      { "key": "torchAsset", "path": "sprite/Torch.png" },
+      { "key": "chestStatic", "path": "sprite/Wooden Chest 2 - frame  00.png" },
+      { "key": "dungeonTiles", "path": "DampDungeonsRPGMakerMZ/DampDungeonsRPGMakerMZ/Tilesets/Dungeon_FloorsWallsA5.png" }
+    ],
+    "tilemaps": [
+      { "key": "dungeonMap", "path": "Dungeon_TilesMap.json" }
+    ]
+  },
+  "config": {
+    "initialTime": 60,
+    "playerSpeed": 180,
+    "colors": ["สีแดง", "สีน้ำเงิน", "สีเขียว", "สีน้ำตาล"],
+    "hexColors": [16711680, 255, 65280, 9127187],
+    "possibleAngles": [0, 45, 90, 135, 180, 225, 270, 315]
+  },
+  "ui": {
+    "messages": {
+      "initialTask": "ภารกิจ: เดินไปที่ชั้นหนังสือ แล้วกด [SPACEBAR] เพื่ออ่านคำใบ้",
+      "spellLearned": "✨ เรียนรู้คาถาสำเร็จ! คุณสามารถกดหมุนรูปปั้นมังกรด้านล่างได้แล้ว",
+      "dragonSealed": "🔒 รูปปั้นมังกรถูกผนึกไว้! คุณต้องหาคัมภีร์คาถามนตร์ก่อน",
+      "lighterObtained": "⚡ สำเร็จ! ได้รับ [ไฟแช็ก]! มุ่งหน้าไปห้องจุดคบเพลิงได้เลย",
+      "needLighter": "❌ ต้องใช้ไฟแช็กก่อน!",
+      "torchOrderWrong": "💨 ลำดับผิด! ไฟดับลงทั้งหมด โปรดเริ่มใหม่",
+      "torchOrderCorrect": "🔥 จุดคบเพลิงถูกต้องทั้งหมดแล้ว ลองไปคุยกับยาม (NPC) ดูสิ",
+      "chestLocked": "🔒 ต้องจุดคบเพลิงให้ถูกต้องก่อน",
+      "chestOpened": "💰 ประตูมิติเปิดแล้ว! จงมุ่งหน้าเข้าสู่ประตูมิติ!"
+    },
+    "texts": {
+      "bookFound": "✨ เจอคัมภีร์คาถามนตร์โบราณแล้ว! ✨",
+      "bookClueFormat": "📜 เศษคำใบ้ปริศนา: \"%s\"",
+      "goldAlert": "+5000 GOLD",
+      "portalExit": "🌀 ประตูมิติเปิดแล้ว!\n[ เดินเข้าไปเพื่อจบด่าน ]"
+    }
+  },
+  "positions": {
+    "books": { "startX": 130, "stepX": 70, "y": 100, "count": 5 },
+    "statues": { "startX": 150, "stepX": 80, "y": 520, "count": 4 },
+    "torches": { "startX": 750, "stepX": 90, "y": 130, "count": 4 },
+    "npc": { "x": 820, "y": 520 },
+    "chest": { "x": 980, "y": 520 },
+    "player": { "x": 160, "y": 120 },
+    "portal": { "x": 1220, "y": 520 },
+    "enemies": [
+      { "x": 600, "y": 300 },
+      { "x": 900, "y": 300 }
+    ]
+  }
+}
