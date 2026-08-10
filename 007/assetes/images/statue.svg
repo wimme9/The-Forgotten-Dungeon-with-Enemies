@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 96" width="64" height="96">
+  <!-- เงา -->
+  <ellipse cx="32" cy="90" rx="22" ry="5" fill="#000000" opacity="0.3"/>
+
+  <!-- ฐานล่าง -->
+  <rect x="10" y="78" width="44" height="12" fill="#5a5f63"/>
+  <rect x="10" y="78" width="44" height="3" fill="#75797d"/>
+
+  <!-- แท่นฐาน -->
+  <rect x="16" y="66" width="32" height="14" fill="#6b7075"/>
+  <rect x="16" y="66" width="32" height="3" fill="#868b8f"/>
+
+  <!-- ลำตัวรูปปั้น (ห่มเสื้อคลุมหิน) -->
+  <path d="M22 66 C20 46 22 30 32 24 C42 30 44 46 42 66 Z" fill="#9a9fa3"/>
+  <path d="M22 66 C20 46 22 30 32 24 C42 30 44 46 42 66 Z" fill="none" stroke="#767b7f" stroke-width="1"/>
+
+  <!-- หัว -->
+  <circle cx="32" cy="18" r="9" fill="#a3a8ac"/>
+  <path d="M25 15 Q32 8 39 15" stroke="#767b7f" stroke-width="1" fill="none"/>
+
+  <!-- แขนพนมเข้าหากันด้านหน้า -->
+  <path d="M27 42 Q32 50 37 42 L37 50 Q32 56 27 50 Z" fill="#868b8f"/>
+
+  <!-- รอยแตกหินเล็กน้อย -->
+  <path d="M28 34 L30 44 M36 30 L34 40" stroke="#5f6468" stroke-width="1" opacity="0.6"/>
+</svg>

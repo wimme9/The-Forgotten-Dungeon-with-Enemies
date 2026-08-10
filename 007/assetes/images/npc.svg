@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 48" width="32" height="48">
+  <!-- เงา -->
+  <ellipse cx="16" cy="46" rx="10" ry="2.5" fill="#000000" opacity="0.25"/>
+
+  <!-- เสื้อคลุม/ตัว -->
+  <path d="M9 44 L9 30 C9 22 12 18 16 18 C20 18 23 22 23 30 L23 44 Z" fill="#3d6e5e"/>
+  <path d="M9 44 L9 30 C9 22 12 18 16 18 C20 18 23 22 23 30 L23 44 Z" fill="none" stroke="#294b40" stroke-width="1"/>
+
+  <!-- แถบคาดเอว -->
+  <rect x="9" y="33" width="14" height="3" fill="#8a5a2b"/>
+
+  <!-- แขน -->
+  <rect x="5" y="24" width="5" height="14" rx="2.5" fill="#3d6e5e"/>
+  <rect x="22" y="24" width="5" height="14" rx="2.5" fill="#3d6e5e"/>
+
+  <!-- มือ -->
+  <circle cx="7.5" cy="39" r="2.5" fill="#e0b08a"/>
+  <circle cx="24.5" cy="39" r="2.5" fill="#e0b08a"/>
+
+  <!-- คอ -->
+  <rect x="14" y="14" width="4" height="5" fill="#e0b08a"/>
+
+  <!-- หัว -->
+  <circle cx="16" cy="10" r="7" fill="#e0b08a"/>
+
+  <!-- ผม -->
+  <path d="M9 9 C9 3 23 3 23 9 C23 6 20 5 16 5 C12 5 9 6 9 9 Z" fill="#4a3323"/>
+
+  <!-- ตา -->
+  <circle cx="13.5" cy="10" r="1" fill="#2b2b2b"/>
+  <circle cx="18.5" cy="10" r="1" fill="#2b2b2b"/>
+
+  <!-- ปาก -->
+  <path d="M13.5 13 Q16 14.5 18.5 13" stroke="#8a4a2c" stroke-width="1" fill="none"/>
+
+  <!-- หมวกคลุมเล็กน้อย (ตัวบ่งบอกว่าเป็น NPC ชาวบ้าน) -->
+  <path d="M8 8 Q16 -1 24 8" fill="none" stroke="#294b40" stroke-width="1.5" opacity="0.5"/>
+</svg>

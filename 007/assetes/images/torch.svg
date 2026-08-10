@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 64" width="40" height="64">
+  <!-- แสงเรืองรอบเปลว -->
+  <circle cx="20" cy="18" r="18" fill="#ffb347" opacity="0.18"/>
+  <circle cx="20" cy="18" r="11" fill="#ffcf5c" opacity="0.22"/>
+
+  <!-- ด้ามไม้ -->
+  <rect x="16" y="30" width="8" height="30" rx="2" fill="#5b3a1e"/>
+  <rect x="16" y="30" width="8" height="30" rx="2" fill="none" stroke="#3e2712" stroke-width="1"/>
+
+  <!-- ตัวยึดเหล็ก (หัวคบไฟ) -->
+  <path d="M13 30 L27 30 L24 22 L16 22 Z" fill="#6b6f73"/>
+  <rect x="14" y="26" width="12" height="4" fill="#4c5054"/>
+
+  <!-- เปลวไฟ (ชั้นนอก) -->
+  <path d="M20 6 C26 12 27 18 22 24 C24 20 20 18 20 14 C20 18 16 20 18 24 C13 18 14 12 20 6 Z" fill="#e8570d"/>
+
+  <!-- เปลวไฟ (ชั้นใน) -->
+  <path d="M20 11 C23 15 23 19 20 22 C21 19 19 18 19 16 C19 18 17 19 18 22 C15 19 15 15 20 11 Z" fill="#ffcf3a"/>
+
+  <!-- แกนขาวกลางเปลว -->
+  <ellipse cx="20" cy="19" rx="2" ry="3.5" fill="#fff6d8"/>
+</svg>

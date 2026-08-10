@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <pattern id="blockGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#3a3a3e"/>
+      <rect width="32" height="32" fill="#000000" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <!-- พื้นหินฐาน -->
+  <rect width="128" height="128" fill="url(#blockGrid)"/>
+
+  <!-- เส้นร่องระหว่างก้อนหิน -->
+  <g stroke="#232326" stroke-width="2">
+    <line x1="0" y1="32" x2="128" y2="32"/>
+    <line x1="0" y1="64" x2="128" y2="64"/>
+    <line x1="0" y1="96" x2="128" y2="96"/>
+    <line x1="32" y1="0" x2="32" y2="128"/>
+    <line x1="64" y1="0" x2="64" y2="128"/>
+    <line x1="96" y1="0" x2="96" y2="128"/>
+  </g>
+
+  <!-- ก้อนหินสลับสีเล็กน้อยให้ดูไม่แบนราบ -->
+  <rect x="0"  y="0"  width="32" height="32" fill="#414146" opacity="0.5"/>
+  <rect x="64" y="32" width="32" height="32" fill="#343438" opacity="0.5"/>
+  <rect x="32" y="64" width="32" height="32" fill="#414146" opacity="0.4"/>
+  <rect x="96" y="96" width="32" height="32" fill="#343438" opacity="0.4"/>
+
+  <!-- รอยแตกเล็ก ๆ -->
+  <path d="M18 6 L24 14 L20 22" stroke="#1c1c1e" stroke-width="1" fill="none" opacity="0.7"/>
+  <path d="M100 70 L108 78 L104 88" stroke="#1c1c1e" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- ปื้นตะไคร่/ความชื้นจาง ๆ -->
+  <ellipse cx="46" cy="12" rx="7" ry="3" fill="#3f5c3f" opacity="0.15"/>
+  <ellipse cx="110" cy="112" rx="8" ry="4" fill="#3f5c3f" opacity="0.12"/>
+  <ellipse cx="8" cy="100" rx="6" ry="3" fill="#3f5c3f" opacity="0.1"/>
+</svg>
