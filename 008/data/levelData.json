@@ -1,0 +1,60 @@
+{
+    "config": {
+        "timeLimit": 90,
+        "playerSpeed": 180,
+        "volumes": {
+            "bgm": 0.25,
+            "sfx": 0.6,
+            "loudSfx": 0.7
+        },
+        "enemy": {
+            "spawnX": 480,
+            "spawnY": 530,
+            "speed": 1.5,
+            "detectRadius": 200,
+            "hitbox": {
+                "hRadius": 10,
+                "vRadius": 10
+            }
+        }
+    },
+    "puzzle": {
+        "colors": ["Red", "Blue", "Green", "Brown"],
+        "hexColors": ["0xff0000", "0x0000ff", "0x00ff00", "0x8b4513"],
+        "possibleAngles": [0, 45, 90, 135, 180, 225, 270, 315]
+    },
+    "positions": {
+        "playerSpawn": { "x": 100, "y": 150 },
+        "pauseButton": { "x": 1100, "y": 50 },
+        "books": { "startX": 120, "y": 150, "spacingX": 90 },
+        "dragons": [
+            { "x": 120, "y": 460 },
+            { "x": 248, "y": 460 },
+            { "x": 120, "y": 604 },
+            { "x": 248, "y": 604 }
+        ],
+        "torches": { "startX": 800, "y": 150, "spacingX": 120 },
+        "npc": { "x": 1000, "y": 520 },
+        "chest": { "x": 1120, "y": 520 }
+    },
+    "texts": {
+        "library": "📚 THE LIBRARY",
+        "dragon": "🗿 DRAGON CHAMBER",
+        "torch": "🔥 TORCH ROOM",
+        "treasure": "👑 TREASURE ROOM",
+        "objective": "Objective: Walk up to a book and press SPACEBAR to inspect it."
+    },
+    "dialogues": {
+        "prePuzzle": [
+            { "text": "NPC: 'Hello there.'", "options": [{ "text": "Hello", "next": 2 }, { "text": "Goodbye", "next": -1 }] },
+            { "text": "NPC: 'Hello adventurer, nice to see you here.'", "options": [{ "text": "What are you doing here?", "next": 3 }] },
+            { "text": "NPC: 'I am guarding this ancient space.'", "options": [{ "text": "I'm trying to figure out the torch puzzle.", "next": 4 }, { "text": "Just passing by.", "next": -1 }] },
+            { "text": "NPC: 'I can help you with that.'", "options": [{ "text": "Really? That would be nice.", "next": 5 }, { "text": "No, thanks.", "next": -1 }] },
+            { "text": "NPC: 'The order of torches is: [ {TORCH_ORDER} ]'", "options": [{ "text": "Thanks!", "next": -1 }] }
+        ],
+        "postPuzzle": [
+            { "text": "NPC: 'Great job adventurer, the treasure is yours!'", "options": [{ "text": "Thanks again, good luck now.", "next": 1 }] },
+            { "text": "NPC: 'See you around!'", "options": [{ "text": "[Leave Conversation]", "next": -1 }] }
+        ]
+    }
+}
