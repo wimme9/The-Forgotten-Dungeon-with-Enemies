@@ -1,0 +1,39 @@
+{
+  "tilemap": { "key": "stadium_map", "path": "sprites/Map_new.tmj" },
+  "tilesetImage": { "key": "tiles", "path": "sprites/Map.png" },
+  "spritesheets": [
+    { "key": "player", "path": "sprites/GhostSheet_Character.png", "frameWidth": 32, "frameHeight": 32 },
+    { "key": "orc", "path": "sprites/Orc.png", "frameWidth": 100, "frameHeight": 100 }
+  ],
+  "images": [
+    { "key": "book1", "path": "sprites/book1.png" },
+    { "key": "book2", "path": "sprites/book2.png" },
+    { "key": "book3", "path": "sprites/book3.png" },
+    { "key": "book4", "path": "sprites/book4.png" },
+    { "key": "book5", "path": "sprites/book5.png" },
+    { "key": "jude_statue", "path": "sprites/jude bellingham_Statue.png" },
+    { "key": "fire1", "path": "sprites/fire1.png" },
+    { "key": "fire2", "path": "sprites/fire2.png" },
+    { "key": "fire3", "path": "sprites/fire3.png" },
+    { "key": "messi_npc", "path": "sprites/messi NPC.png" },
+    { "key": "box1", "path": "sprites/box1.png" },
+    { "key": "box2", "path": "sprites/box2.png" },
+    { "key": "box3", "path": "sprites/box3.png" },
+    { "key": "door1", "path": "sprites/door1.png" },
+    { "key": "door2", "path": "sprites/door2.png" },
+    { "key": "wc_key", "path": "sprites/key.png" }
+  ],
+  "audio": [
+    { "key": "bgm", "path": "sound/เสียงเพลงประกอบเกม.mp3" },
+    { "key": "sfx_run", "path": "sound/เสียงวิ่ง.mp3" },
+    { "key": "sfx_book", "path": "sound/เสียงเปิดหนังสือ.mp3" },
+    { "key": "sfx_statue", "path": "sound/เสียงขยับรูปปั้น_ใช้แค่วินาทีที่3-4.mp3" },
+    { "key": "sfx_fire", "path": "sound/เสียงจุดไฟ.mp3" },
+    { "key": "sfx_click_npc", "path": "sound/เสียงตอนคลิ๊กคำใบ้และคุยกับNPC.mp3" },
+    { "key": "sfx_gate_open", "path": "sound/เสียงเปิดประตูห้องตอนทำการกิจแต่ละห้องเสร็จ.mp3" },
+    { "key": "sfx_mission_complete", "path": "sound/เสียงเมื่อทำการกิจแต่ละห้องสำเร็จ.mp3" },
+    { "key": "sfx_chest", "path": "sound/เสียงเปิดกล่องสมบัติ.mp3" },
+    { "key": "sfx_exit_door", "path": "sound/เสียงประตูเปิดทางออก.mp3" },
+    { "key": "sfx_win", "path": "sound/เสียงชนะ.mp3" }
+  ]
+}

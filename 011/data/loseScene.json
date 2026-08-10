@@ -1,0 +1,18 @@
+{
+  "overlay": { "width": 1480, "height": 900, "color": "0x2b0000", "alpha": 0.92 },
+  "decor": {
+    "ring": { "x": 740, "y": 450, "radius": 230, "color": "0xff4d4d", "alpha": 0.25, "lineWidth": 4 },
+    "border": { "x": 240, "y": 100, "width": 1000, "height": 700, "color": "0xffffff", "alpha": 0.1, "lineWidth": 2 }
+  },
+  "reasonTexts": {
+    "hearts": "💔 คุณเลือกกล่องสมบัติผิดครบ 2 ครั้ง\nหัวใจหมดแล้ว...",
+    "time": "⏰ หมดเวลาแล้ว!\nคุณออกจากสเตเดียมไม่ทันเวลา"
+  },
+  "texts": {
+    "title": { "value": "❌ GAME OVER ❌", "x": 740, "y": 300, "fontSize": "56px", "color": "#ff4d4d" },
+    "reason": { "x": 740, "y": 400, "fontSize": "26px", "color": "#ffffff" },
+    "encouragement": { "value": "อย่ายอมแพ้ แชมป์ตัวจริงไม่หยุดง่ายๆ!", "x": 740, "y": 470, "fontSize": "20px", "color": "#ffe066" },
+    "retryButton": { "value": "🔄 ลองใหม่อีกครั้ง", "x": 740, "y": 560, "fontSize": "30px", "color": "#2b0000", "backgroundColor": "#ffe066", "hoverColor": "#ffffff" },
+    "menuButton": { "value": "🏠 กลับหน้าหลัก", "x": 740, "y": 640, "fontSize": "24px", "color": "#ffffff", "backgroundColor": "#4a3220", "hoverColor": "#6b4a32" }
+  }
+}

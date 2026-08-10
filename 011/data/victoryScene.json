@@ -1,0 +1,19 @@
+{
+  "overlay": { "width": 1480, "height": 900, "color": "0x000000", "alpha": 0.85 },
+  "confetti": {
+    "colors": ["0xffe066", "0xff4d4d", "0x4dff88", "0x4da6ff", "0xff4dff", "0xffffff"],
+    "lifespan": 4000,
+    "speedYMin": 120,
+    "speedYMax": 260,
+    "speedXMin": -70,
+    "speedXMax": 70,
+    "gravityY": 140,
+    "quantity": 4,
+    "frequency": 30
+  },
+  "texts": {
+    "title": { "value": "🏆 WORLD CUP CHAMPION! 🏆\nคุณหนีออกจากดันเจี้ยนสำเร็จ!", "x": 740, "y": 350, "fontSize": "45px", "color": "#ffe066" },
+    "restartButton": { "value": "🔄 PLAY AGAIN", "x": 740, "y": 520, "fontSize": "30px", "color": "#1a472a", "backgroundColor": "#ffe066", "hoverColor": "#ffffff" },
+    "menuButton": { "value": "🏠 MAIN MENU", "x": 740, "y": 610, "fontSize": "24px", "color": "#ffffff", "backgroundColor": "#4a3220", "hoverColor": "#6b4a32" }
+  }
+}

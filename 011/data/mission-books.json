@@ -1,0 +1,12 @@
+{
+  "y": 140,
+  "positionsX": [120, 200, 280, 360, 440],
+  "keys": ["book1", "book2", "book3", "book4", "book5"],
+  "texts": [
+    "World Cup History - จุดเริ่มต้นแห่งความยิ่งใหญ่",
+    "Greatest Players - ตำนานแห่งเกมลูกหนัง",
+    "Memorable Matches - ค่ำคืนแห่งการพลิกกลับที่น่าจดจำ",
+    "World Cup Stadiums - สนามที่ความฝันเป็นจริง",
+    "Beyond the Dream - ชัยชนะสูงสุด"
+  ]
+}

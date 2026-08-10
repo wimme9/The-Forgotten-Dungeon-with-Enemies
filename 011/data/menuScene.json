@@ -1,0 +1,26 @@
+{
+  "audio": { "key": "sfx_click_npc", "path": "sound/เสียงตอนคลิ๊กคำใบ้และคุยกับNPC.mp3" },
+  "background": { "width": 1480, "height": 900, "color": "0x1a472a" },
+  "field": {
+    "centerCircle": { "x": 740, "y": 450, "radius": 150, "strokeColor": "0xffffff", "strokeAlpha": 0.5 },
+    "centerLine": { "x1": 740, "y1": 0, "x2": 740, "y2": 900, "color": "0xffffff", "alpha": 0.5 },
+    "border": { "x": 740, "y": 450, "width": 1100, "height": 760, "strokeColor": "0xffffff", "strokeAlpha": 0.12 }
+  },
+  "cornerFlags": [
+    { "x": 70, "y": 90 },
+    { "x": 1410, "y": 90 },
+    { "x": 70, "y": 810 },
+    { "x": 1410, "y": 810 }
+  ],
+  "cornerFlagStyle": { "poleColor": "0xffffff", "poleAlpha": 0.6, "flagColor": "0xffe066", "flagAlpha": 0.85 },
+  "texts": {
+    "title": { "value": "⚽ WORLD CUP DUNGEON ⚽", "x": 740, "y": 170, "fontSize": "62px", "color": "#ffe066" },
+    "subtitle": { "value": "หนีออกจากสเตเดียมลับให้สำเร็จ", "x": 740, "y": 235, "fontSize": "28px", "color": "#ffffff" },
+    "description": { "value": "ออกผจญภัยผ่านภารกิจธีมฟุตบอลโลก", "x": 740, "y": 300, "fontSize": "24px", "color": "#ffe066" },
+    "quote": { "value": "\"ไขปริศนา เก็บรางวัล และพิสูจน์ว่าคุณคือแชมป์ตัวจริง!\"", "x": 740, "y": 335, "fontSize": "20px", "color": "#ffffff" },
+    "trophyEmoji": { "value": "🏆", "x": 740, "y": 440, "fontSize": "100px" },
+    "startButton": { "value": "⚽ KICK OFF (เริ่มเกม)", "x": 740, "y": 610, "fontSize": "35px", "color": "#1a472a", "backgroundColor": "#ffe066", "hoverColor": "#ffffff" },
+    "controlsHint": { "value": "กด WASD หรือลูกศรเพื่อเดิน, กด E เพื่อโต้ตอบ", "x": 740, "y": 690, "fontSize": "18px", "color": "#dddddd" },
+    "limitsHint": { "value": "⏱ มีเวลาจำกัด 1 นาที และหัวใจ 2 ดวงในภารกิจกล่องสมบัติ", "x": 740, "y": 720, "fontSize": "16px", "color": "#ff9d9d" }
+  }
+}

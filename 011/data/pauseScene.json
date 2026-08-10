@@ -1,0 +1,10 @@
+{
+  "overlay": { "width": 1480, "height": 900, "color": "0x000000", "alpha": 0.7 },
+  "box": { "x": 740, "y": 450, "width": 500, "height": 350, "color": "0x1a472a", "alpha": 0.95, "strokeColor": "0xffe066", "strokeWidth": 4 },
+  "decorCircle": { "x": 740, "y": 450, "radius": 150, "color": "0xffffff", "alpha": 0.05 },
+  "texts": {
+    "title": { "value": "⏸ MATCH PAUSED ⚽", "x": 740, "y": 350, "fontSize": "44px", "color": "#ffe066" },
+    "resumeButton": { "value": "▶ RESUME MATCH", "x": 740, "y": 470, "fontSize": "28px", "color": "#ffffff", "backgroundColor": "#2e8b57", "hoverColor": "#3cb371" },
+    "quitButton": { "value": "🏠 QUIT TO MENU", "x": 740, "y": 550, "fontSize": "24px", "color": "#ffffff", "backgroundColor": "#8b0000", "hoverColor": "#ff0000" }
+  }
+}

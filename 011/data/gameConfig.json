@@ -1,0 +1,82 @@
+{
+  "worldBounds": { "width": 1480, "height": 900 },
+  "speed": 200,
+  "maxHearts": 5,
+  "timeLimitMs": 120000,
+  "penaltyDurationMs": 2000,
+  "penaltySpeedMultiplier": 0.35,
+  "scale": {
+    "book": 0.14,
+    "statue": 0.09,
+    "torch": 0.13,
+    "messi": 0.22,
+    "chest": 0.14,
+    "door": 1,
+    "enemy": 1.0
+  },
+  "player": {
+    "startX": 260,
+    "startY": 220,
+    "displayScale": 2,
+    "bodySize": { "width": 18, "height": 24 },
+    "bodyOffset": { "x": 7, "y": 6 },
+    "hitRadius": 12,
+    "animations": {
+      "idle": { "start": 0, "end": 1, "frameRate": 4 },
+      "walk": { "start": 24, "end": 27, "frameRate": 8 }
+    }
+  },
+  "gates": [
+    { "key": "gate1", "x": 300, "y": 340, "w": 80, "h": 30, "requiredMission": 2 },
+    { "key": "gate2", "x": 1038, "y": 340, "w": 80, "h": 30, "requiredMission": 2 },
+    { "key": "gate3", "x": 300, "y": 520, "w": 80, "h": 30, "requiredMission": 3 },
+    { "key": "gate4", "x": 1038, "y": 520, "w": 80, "h": 30, "requiredMission": 4 }
+  ],
+  "missionStatusLabels": {
+    "1": "ภารกิจปัจจุบัน: Mission 1 — หาหนังสือที่ถูกต้อง",
+    "2": "ภารกิจปัจจุบัน: Mission 2 — หมุนรูปปั้นให้ถูกทิศ",
+    "3": "ภารกิจปัจจุบัน: Mission 3 — จุดคบเพลิงให้ถูกลำดับ",
+    "4": "ภารกิจปัจจุบัน: Mission 4 — คุยกับเมสซี่",
+    "5": "ภารกิจปัจจุบัน: Mission 5 — เลือกกล่องสมบัติ",
+    "6": "ภารกิจปัจจุบัน: ไปที่ประตูทางออก"
+  },
+  "enemy": {
+    "invulnerabilityMs": 2000,
+    "knockbackDistance": 40,
+    "knockbackDurationMs": 150,
+    "animations": {
+      "idle": { "start": 0, "end": 5, "frameRate": 5 },
+      "walk": { "start": 8, "end": 15, "frameRate": 10 }
+    }
+  },
+  "uiText": {
+    "interactPrompt": "กด E",
+    "pauseButtonLabel": "⏸ PAUSE",
+    "lockedMessage": "🔒 ต้องทำภารกิจก่อนหน้าให้สำเร็จก่อนถึงจะผ่านมาตรงนี้ได้นะ!",
+    "hintPromptText": "กด E เพื่อดูคำใบ้",
+    "bookPromptText": "กด E เพื่ออ่านหนังสือ",
+    "statuePromptText": "กด E หมุนรูปปั้น 90°",
+    "torchPromptText": "กด E เพื่อจุดไฟ",
+    "messiPromptText": "กด E เพื่อคุยกับเมสซี่",
+    "chestPromptText": "กด E เพื่อเปิดกล่อง",
+    "doorPromptText": "กด E เพื่อเปิดประตู",
+    "torchWrongOrderMessage": "❌ ลำดับผิด! คบเพลิงดับหมด ลองใหม่อีกครั้ง (กด E ที่ป้าย \"?\" เพื่อดูคำใบ้)",
+    "torchSolvedMessage": "🔥 จุดคบเพลิงถูกลำดับครบแล้ว! ทางไปพบเมสซี่เปิดแล้ว",
+    "statueSolvedMessage": "🗿 รูปปั้นทั้งหมดหันถูกทิศแล้ว! ปริศนาสำเร็จ ทางไปห้องคบเพลิงเปิดแล้ว",
+    "messiRepeatLine": "\"Go on, the chests are waiting for you.\"",
+    "messiContinueHint": "\n\n(กด E เพื่ออ่านต่อ)",
+    "chestsUnlockedMessage": "✨ กล่องสมบัติทั้ง 3 ใบพร้อมให้เลือกแล้ว! เลือกได้เพียงครั้งเดียว ระวังให้ดี (ไม่มีคำใบ้ข้อนี้)",
+    "chestAlreadyOpenedMessage": "คุณได้กุญแจไปแล้ว ไปที่ประตูทางออกได้เลย",
+    "chestFoundKeyMessage": "🗝️ คุณพบ Golden World Cup Trophy Key! เดินเข้าซอกขวาไปเปิดประตูทางออกได้เลย",
+    "chestWrongPrefix": "🟥 พลาด! กล่องนี้ไม่มีกุญแจ... เสียหัวใจไป 1 ดวง (เหลือ ",
+    "chestWrongSuffix": ")",
+    "doorLockedMessage": "🔒 ประตูถูกล็อกอยู่... ต้องมีกุญแจ World Cup ก่อนถึงจะเปิดได้",
+    "doorOpenedMessage": "🚪 ประตูเปิดแล้ว! เส้นทางออกจากสเตเดียมปรากฏ...",
+    "correctScrollMessagePrefix": "✨ คุณได้รับ \"FOOTBALL SCROLL\"! ทางไปห้องที่ 2 เปิดแล้ว",
+    "wrongBookMessage": "\n\n❌ ยังไม่ใช่เล่มที่ถูกต้อง ลองหาเล่มอื่นดูนะ!",
+    "statuesLockedStillMessage": "รูปปั้นเหล่านี้หยุดนิ่งแล้ว หลังจากไขปริศนาสำเร็จ",
+    "torchesLockedStillMessage": "คบเพลิงเหล่านี้ถูกจุดถาวรแล้ว",
+    "enemyHitPrefix": "🗡️ โดนมอนสเตอร์โจมตี! เสียหัวใจไป 1 ดวง (เหลือ ",
+    "enemyHitSuffix": ")"
+  }
+}

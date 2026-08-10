@@ -1,0 +1,8 @@
+{
+  "y": 170,
+  "positionsX": [890, 980, 1070, 1160],
+  "targetDirections": [0, 1, 2, 3],
+  "directionLabels": ["N", "E", "S", "W"],
+  "hintPosition": { "x": 1025, "y": 270 },
+  "hintPrefix": "คำใบ้: หมุนรูปปั้นทั้ง 4 ตัวให้หันทิศตามลำดับ"
+}
