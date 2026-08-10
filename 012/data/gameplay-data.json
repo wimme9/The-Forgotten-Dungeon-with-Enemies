@@ -1,0 +1,193 @@
+{
+  "canvasId": "gameCanvas",
+
+  "tile": {
+    "size": 16,
+    "floorTile": { "col": 0, "row": 0 },
+    "wallTile": { "col": 0, "row": 0 },
+    "wallFlip": {
+      "top":    { "flipX": false, "flipY": true },
+      "bottom": { "flipX": false, "flipY": false },
+      "left":   { "flipX": false, "flipY": false },
+      "right":  { "flipX": false, "flipY": false }
+    }
+  },
+
+  "assets": {
+    "images": {
+      "floorTileset":         "assets/sprite/floor_1.png",
+      "wallTilesetTopBottom": "assets/sprite/wall_top_right.png",
+      "wallTilesetSide":      "assets/sprite/wall_outer_mid_left.png",
+      "bookImg":               "assets/sprite/book.png",
+      "statueImg":             "assets/sprite/T.png",
+      "torchImg":              "assets/sprite/Pixel_Bild__torch.png",
+      "npcImg":                "assets/sprite/npc.png",
+      "chestImg":              "assets/sprite/box.png",
+      "playerImg":             "assets/sprite/Character.png",
+      "enemyImg":              "assets/sprite/Orc.png"
+    },
+    "sounds": {
+      "stageClearSound": { "src": "assets/sound/s.mp3",     "volume": 0.8 },
+      "bookSound":        { "src": "assets/sound/book.mp3",  "volume": 0.8 },
+      "stoneSound":       { "src": "assets/sound/stone.mp3", "volume": 0.8 },
+      "fireSound":        { "src": "assets/sound/fire.mp3",  "volume": 0.8 },
+      "chestSound":       { "src": "assets/sound/chest.mp3", "volume": 0.8 },
+      "winSound":         { "src": "assets/sound/win.mp3",   "volume": 0.9 },
+      "loseSound":        { "src": "assets/sound/lose.mp3",  "volume": 0.9 }
+    }
+  },
+
+  "ui": {
+    "pauseButton": { "x": 950, "y": 30, "w": 48, "h": 34 }
+  },
+
+  "world": {
+    "rooms": [
+      { "x": 40,  "y": 40,  "w": 240, "h": 180, "quest": "เควส: ค้นหาคัมภีร์เวทมนตร์ที่ถูกต้อง" },
+      { "x": 360, "y": 40,  "w": 280, "h": 180, "quest": "เควส: หมุนรูปปั้นให้หันถูกทิศ (ดูป้ายเหนือรูปปั้น)" },
+      { "x": 360, "y": 340, "w": 280, "h": 180, "quest": "เควส: จุดคบเพลิงเรียงลำดับจาก 1-4" },
+      { "x": 720, "y": 340, "w": 240, "h": 180, "quest": "เควส: เลือกเปิดหีบกุญแจ (ระวังกับดัก)" }
+    ],
+    "corridors": [
+      { "x": 280, "y": 110, "w": 80, "h": 40 },
+      { "x": 480, "y": 220, "w": 40, "h": 120 },
+      { "x": 640, "y": 410, "w": 80, "h": 40 }
+    ],
+    "doors": {
+      "door1": { "x": 295, "y": 100, "w": 20, "h": 60, "locked": true },
+      "door2": { "x": 470, "y": 265, "w": 60, "h": 30, "locked": true },
+      "door3": { "x": 645, "y": 400, "w": 20, "h": 60, "locked": true }
+    }
+  },
+
+  "missions": {
+    "books": {
+      "size": 32,
+      "items": [
+        { "x": 90,  "y": 80,  "title": "คัมภีร์เงา",              "message": "เปิดออกมา... หน้ากระดาษว่างเปล่า ราวกับตัวอักษรหนีหายไปเมื่อมีคนจ้องมอง", "correct": false },
+        { "x": 160, "y": 80,  "title": "บันทึกนักเล่นแร่แปรธาตุ",   "message": "สูตรแปลงตะกั่วเป็นทองคำ... แต่หน้าสุดท้ายดูเหมือนจะถูกฉีกหายไป", "correct": false },
+        { "x": 230, "y": 80,  "title": "คัมภีร์ต้องคำสาป",         "message": "ทันทีที่แตะปกหนังสือ แสงสีทองพวยพุ่งออกมา! ม้วนกระดาษเรืองแสงลอยขึ้นจากหน้ากระดาษ...", "correct": true },
+        { "x": 90,  "y": 190, "title": "ตำนานเทพเจ้าโบราณ",       "message": "เล่าเรื่องเทพผู้หลับใหลอยู่ใต้ภูเขาไฟมาเนิ่นนาน รอวันที่จะตื่นขึ้นอีกครั้ง", "correct": false },
+        { "x": 230, "y": 190, "title": "สมุดบันทึกบรรณารักษ์",     "message": "รายชื่อผู้ยืมหนังสือ... ชื่อคนสุดท้ายที่ยืมถูกขีดฆ่าจนอ่านไม่ออก", "correct": false }
+      ]
+    },
+    "statues": {
+      "size": 40,
+      "items": [
+        { "x": 410, "y": 80,  "angle": 180, "targetAngle": 0,   "name": "รูปปั้นผู้พิทักษ์ทิศเหนือ" },
+        { "x": 590, "y": 80,  "angle": 0,   "targetAngle": 90,  "name": "รูปปั้นผู้พิทักษ์ทิศตะวันออก" },
+        { "x": 410, "y": 180, "angle": 90,  "targetAngle": 180, "name": "รูปปั้นผู้พิทักษ์ทิศใต้" },
+        { "x": 590, "y": 180, "angle": 270, "targetAngle": 270, "name": "รูปปั้นผู้พิทักษ์ทิศตะวันตก" }
+      ]
+    },
+    "torches": {
+      "size": 32,
+      "correctSequence": [0, 1, 2, 3],
+      "items": [
+        { "id": 0, "x": 400, "y": 380, "isOn": false, "name": "คบเพลิงอันที่ 1" },
+        { "id": 1, "x": 460, "y": 380, "isOn": false, "name": "คบเพลิงอันที่ 2" },
+        { "id": 2, "x": 520, "y": 380, "isOn": false, "name": "คบเพลิงอันที่ 3" },
+        { "id": 3, "x": 580, "y": 380, "isOn": false, "name": "คบเพลิงอันที่ 4" }
+      ]
+    },
+    "npc": {
+      "x": 760, "y": 480, "size": 100, "name": "ผู้เฒ่าแห่งวิหาร",
+      "dialogues": [
+        "NPC: เจ้ามาถึงห้องสุดท้ายแล้วสินะ",
+        "NPC: ข้าเฝ้าห้องนี้มานาน คอยดูแลหีบสมบัติทั้งสามใบ",
+        "NPC: มีหีบใบเดียวที่มีกุญแจจริง ใบที่เหลือเป็นกับดัก",
+        "NPC: เลือกให้ดีนะ ขอให้โชคดี"
+      ]
+    },
+    "chests": {
+      "size": 40,
+      "items": [
+        { "id": 1, "x": 760, "y": 430, "isOpened": false, "isCorrect": false, "name": "หีบด้านซ้าย" },
+        { "id": 2, "x": 840, "y": 430, "isOpened": false, "isCorrect": true,  "name": "หีบตรงกลาง" },
+        { "id": 3, "x": 920, "y": 430, "isOpened": false, "isCorrect": false, "name": "หีบด้านขวา" }
+      ]
+    }
+  },
+
+  "gameRules": {
+    "maxMistakes": 3,
+    "interactRadius": 70,
+    "trapSpeedPenalty": 1,
+    "victoryDelayMs": 2000,
+    "gameOverDelayMs": 1500
+  },
+
+  "player": {
+    "start": { "x": 160, "y": 130 },
+    "width": 40,
+    "height": 60,
+    "speed": 5,
+    "direction": "front",
+    "collisionSize": { "w": 14, "h": 14 },
+    "spriteSheet": { "sourceWidth": 736, "sourceHeight": 1102, "cols": 4, "rows": 4 },
+    "animations": {
+      "front": [0, 1, 2, 3],
+      "back":  [4, 5, 6, 7],
+      "left":  [8, 9, 10, 11],
+      "right": [12, 13, 14, 15]
+    },
+    "animFrameDelay": 8
+  },
+
+  "lookups": {
+    "directionNames": {
+      "0":   "เหนือ (↑)",
+      "90":  "ตะวันออก (→)",
+      "180": "ใต้ (↓)",
+      "270": "ตะวันตก (←)"
+    },
+    "arrowSymbols": {
+      "0":   "↑",
+      "90":  "→",
+      "180": "↓",
+      "270": "←"
+    }
+  },
+
+  "messages": {
+    "tooFar": "คุณอยู่ไกลเกินไป เข้าไปใกล้ๆ ก่อนสิ",
+    "closeMessageTip": "(คลิกที่ไหนก็ได้เพื่อปิดข้อความ)",
+    "nextDialogueTip": "(คลิกเพื่ออ่านประโยคถัดไป)",
+    "npcAfterTalked": "NPC: จงระวังหีบกับดักในห้องถัดไปให้ดีๆ ล่ะเจ้าหนู!",
+    "statuesSolved": "กลไกประตูดังลั่น... รูปปั้นทุกตัวหันถูกทิศแล้ว! ประตูทางลงเปิดออก!",
+    "torchesSolved": "🔥 คบเพลิงจุดครบตามลำดับแล้ว! ประตูทางออกห้องคบเพลิงเปิดแล้ว!",
+    "torchWrongOrder": "💥 จุดคบเพลิงผิดลำดับ! ไฟทุกดวงดับลง...",
+    "torchLit": "คุณจุดไฟที่ \"{name}\"... เปลวไฟลุกโชนขึ้น!",
+    "bookWrong": "\"{title}\" ไม่ใช่คัมภีร์ที่ถูกต้อง!",
+    "statueCorrect": "✅ \"{name}\" หันถูกทิศแล้ว! ({count}/4 ตัว)",
+    "statueWrong": "หมุน \"{name}\" ไปทาง {direction}... ดูป้ายสีเหลืองเหนือรูปปั้นเพื่อดูทิศที่ต้องการ ({count}/4 ตัว)",
+    "chestCorrect": "🎉 ยินดีด้วย! คุณเปิด \"{name}\" และพบ \"กุญแจทองคำโบราณ\"! คุณเคลียร์วิหารแห่งนี้สำเร็จแล้ว!",
+    "chestTrap": "💥 \"{name}\" เป็นกับดัก! หมอกพิษพุ่งออกมา!",
+    "gameOverSuffix": "(พลาดครบ {max}/{max} ครั้งแล้ว!)",
+    "mistakeWarning": "(พลาดไปแล้ว {mistakes}/{max} ครั้ง เหลืออีก {remaining} ครั้งจะแพ้!)",
+    "orcAttack": "👹 Orc โจมตีคุณ!"
+  },
+
+  "enemies": [
+    {
+      "spawnX": 150, "spawnY": 160,
+      "speed": 1.2, "detectRadius": 150, "attackRange": 40, "patrolRange": 50,
+      "hitbox": { "hRadius": 8, "vRadius": 8 }
+    },
+    {
+      "spawnX": 600, "spawnY": 200,
+      "speed": 1.5, "detectRadius": 200, "attackRange": 40, "patrolRange": 80,
+      "hitbox": { "hRadius": 8, "vRadius": 8 }
+    },
+    {
+      "spawnX": 500, "spawnY": 460,
+      "speed": 1.3, "detectRadius": 150, "attackRange": 40, "patrolRange": 60,
+      "hitbox": { "hRadius": 8, "vRadius": 8 }
+    },
+    {
+      "spawnX": 850, "spawnY": 380,
+      "speed": 1.4, "detectRadius": 150, "attackRange": 40, "patrolRange": 50,
+      "hitbox": { "hRadius": 8, "vRadius": 8 }
+    }
+  ]
+}
