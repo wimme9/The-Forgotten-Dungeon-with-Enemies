@@ -1,0 +1,68 @@
+{
+  "enemy": {
+    "spawnX": 600,
+    "spawnY": 200,
+    "spawnPoints": [
+      { "x": 600, "y": 200 },
+      { "x": 360, "y": 300 },
+      { "x": 930, "y": 440 }
+    ],
+    "speed": 1.5,
+    "detectRadius": 200,
+    "hitbox": {
+      "hRadius": 10,
+      "vRadius": 10
+    }
+  },
+  "roomTitles": [
+    { "text": "📚 THE LIBRARY", "x": 100, "y": 45, "color": "#88ccff" },
+    { "text": "🗿 DRAGON CHAMBER", "x": 90, "y": 380, "color": "#ffcc88" },
+    { "text": "🔥 TORCH ROOM", "x": 810, "y": 45, "color": "#ff8888" },
+    { "text": "👑 TREASURE ROOM", "x": 810, "y": 350, "color": "#88ff88" }
+  ],
+  "puzzleConfig": {
+    "initialTimerSeconds": 60,
+    "colors": ["Red", "Blue", "Green", "Brown"],
+    "hexColors": [16711680, 255, 65280, 9127187],
+    "possibleAngles": [0, 45, 90, 135, 180, 225, 270, 315],
+    "specialBookClue": "✨ This book contains the ancient Magic Spell scroll! ✨",
+    "cluePrefix": "📜 Clue Fragment: "
+  },
+  "positions": {
+    "libraryBooks": { "startX": 120, "spacingX": 90, "y": 150, "count": 5 },
+    "dragonPedestals": [
+      { "x": 120, "y": 460 },
+      { "x": 248, "y": 460 },
+      { "x": 120, "y": 590 },
+      { "x": 248, "y": 590 }
+    ],
+    "torches": { "startX": 800, "spacingX": 120, "y": 150, "count": 4 },
+    "npc": { "x": 1000, "y": 520 },
+    "chest": { "x": 1120, "y": 520 },
+    "playerSpawn": { "x": 100, "y": 150 }
+  },
+  "dialogues": {
+    "unfinished": [
+      { "text": "NPC: 'Hello there.'", "options": [{ "text": "Hello", "next": 2 }, { "text": "Goodbye", "next": -1 }] },
+      { "text": "NPC: 'Hello adventurer, nice to see you here.'", "options": [{ "text": "What are you doing here?", "next": 3 }] },
+      { "text": "NPC: 'I am guarding this ancient space.'", "options": [{ "text": "I'm trying to figure out the torch puzzle.", "next": 4 }, { "text": "Just passing by.", "next": -1 }] },
+      { "text": "NPC: 'I can help you with that.'", "options": [{ "text": "Really? That would be nice.", "next": 5 }, { "text": "No, thanks.", "next": -1 }] },
+      { "text": "NPC: 'The order of torches is: [ {TORCH_ORDER} ]'", "options": [{ "text": "Thanks!", "next": -1 }] }
+    ],
+    "finished": [
+      { "text": "NPC: 'Great job adventurer, the treasure is yours!'", "options": [{ "text": "Thanks again, good luck now.", "next": 1 }] },
+      { "text": "NPC: 'See you around!'", "options": [{ "text": "[Leave Conversation]", "next": -1 }] }
+    ]
+  },
+  "uiMessages": {
+    "initialObjective": "Objective: Walk up to a book and press SPACEBAR to inspect it.",
+    "spellLearned": "✨ Magic spell learned! Rotate the Dragon Statues in the bottom-left chamber.",
+    "needSpell": "🔒 The dragons are completely static. You need a magic spell!",
+    "lighterObtained": "⚡ Success! Dragons aligned. Obtained the LIGHTER! Proceed to the Torch Room (top right).",
+    "needLighter": "❌ You cannot ignite these torches. You need the Lighter!",
+    "wrongTorchOrder": "💨 Wrong order! The flames fizzle out. Start over!",
+    "torchesLit": "🔥 Fantastic! All torches burning. Speak to the NPC in the Treasure Room.",
+    "chestLocked": "The treasure chest is locked down tight by protective spells.",
+    "chestOpened": "💰 Opened! Found legendary relic contents. Head right through the wall opening to complete the level!"
+  }
+}
