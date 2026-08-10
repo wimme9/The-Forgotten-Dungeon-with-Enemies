@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- เงา -->
+  <ellipse cx="32" cy="54" rx="18" ry="4" fill="#000000" opacity="0.25"/>
+
+  <!-- ปกหลัง -->
+  <path d="M12 16 L52 16 L52 48 L12 48 Z" fill="#5b2e17"/>
+
+  <!-- ปกหน้า (เอียงเล็กน้อยให้ดูเป็นเล่ม) -->
+  <path d="M12 16 L52 16 L50 46 L14 46 Z" fill="#8a4a24"/>
+
+  <!-- สันหนังสือ -->
+  <rect x="12" y="16" width="6" height="32" fill="#3e1e0e"/>
+
+  <!-- ขอบทอง -->
+  <path d="M18 20 L46 20 L44.5 43 L19.5 43 Z" fill="none" stroke="#e6c86e" stroke-width="1.5"/>
+
+  <!-- สัญลักษณ์ตรงกลางปก -->
+  <circle cx="32" cy="30" r="6" fill="none" stroke="#e6c86e" stroke-width="2"/>
+  <path d="M32 24 L32 36 M26 30 L38 30" stroke="#e6c86e" stroke-width="1.5"/>
+
+  <!-- ริบบิ้นคั่นหน้า -->
+  <path d="M40 16 L44 16 L44 40 L42 36 L40 40 Z" fill="#c0392b"/>
+</svg>
