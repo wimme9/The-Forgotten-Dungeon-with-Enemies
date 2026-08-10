@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "timeLeft": 50,
+    "playerSpeed": 180,
+    "interactDistance": 60
+  },
+  "enemy": {
+    "spawnX": 600,
+    "spawnY": 200,
+    "speed": 1.5,
+    "detectRadius": 200,
+    "hitbox": {
+      "hRadius": 10,
+      "vRadius": 10
+    }
+  },
+  "initialState": {
+    "hasSpell": false,
+    "hasLighter": false,
+    "correctBookId": 1,
+    "bookTitles": ["น้ำ", "ไฟ", "ลม", "ดิน", "ไม้"],
+    "statueAngles": [90, 180, 270, 90],
+    "targetAngles": [0, 180, 90, 270],
+    "arrowClues": ["ขึ้น (↑)", "ลง (↓)", "ขวา (→)", "ซ้าย (←)"],
+    "correctTorchOrder": [3, 1, 4, 2],
+    "chestOpened": false,
+    "cutsceneStage": 0,
+    "gatesOpened": {
+      "library": false,
+      "statue": false,
+      "torch": false,
+      "exit": false
+    }
+  },
+  "messages": {
+    "mission": "ภารกิจ: ค้นหาหนังสือที่ถูกต้องในห้องสมุดเพื่อเปิดประตูสีขาวด้านบน",
+    "statueLocked": "รูปปั้นถูกผนึกแน่น!",
+    "darkRoom": "ห้องนี้มืดสนิทและคุณไม่มีอะไรจุดไฟเลย ลองไปแก้ปริศนาห้องรูปปั้นดูก่อนนะ",
+    "chestLocked": "หีบสมบัติถูกลงอาคมเวทมนตร์ล็อกไว้",
+    "chestOpenedReminder": "หีบสมบัติถูกเปิดออกเรียบร้อยแล้ว รีบกลับไปคุยกับ NPC เพื่อเปิดประตู",
+    "npcIgnored": "NPC: ... (เขาดูเหมือนยังไม่สนใจคุณ ลองแก้ปริศนาห้องคบเพลิงให้ผ่านก่อนนะ)"
+  }
+}
