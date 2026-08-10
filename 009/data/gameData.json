@@ -1,0 +1,86 @@
+{
+  "level1": {
+    "timeLimit": 60,
+    "player": {
+      "startX": 180,
+      "startY": 300,
+      "scale": 1.7
+    },
+    "npc": {
+      "x": 350,
+      "y": 200,
+      "key": "Asset 31",
+      "scale": 0.1,
+      "range": 95
+    },
+    "chest": {
+      "x": 100,
+      "y": 460,
+      "keyClosed": "Asset 41",
+      "keyOpen": "Asset 42",
+      "scale": 0.1,
+      "range": 70
+    },
+    "door": {
+      "x": 405,
+      "y": 550,
+      "keyClosed": "Asset 46",
+      "keyOpen": "Asset 47",
+      "scaleX": 0.35,
+      "scaleY": 0.3,
+      "range": 90
+    },
+    "statueGroups": [
+      { "x": 400, "y": 80, "keys": ["Asset 15", "Asset 16", "Asset 17", "Asset 18"], "correctIndex": 1 },
+      { "x": 550, "y": 80, "keys": ["Asset 19", "Asset 20", "Asset 21", "Asset 22"], "correctIndex": 1 },
+      { "x": 700, "y": 80, "keys": ["Asset 23", "Asset 24", "Asset 25", "Asset 26"], "correctIndex": 0 },
+      { "x": 700, "y": 200, "keys": ["Asset 27", "Asset 28", "Asset 29", "Asset 30"], "correctIndex": 3 }
+    ],
+    "books": [
+      { "key": "book1", "x": 50, "y": 100, "message": "หนังสือเล่ม 1: รูปปั้นถือโล่วงกลมหันไปทางขวา", "scale": 0.04, "range": 70 },
+      { "key": "book2", "x": 50, "y": 190, "message": "หนังสือเล่ม 2: รูปปั้นถือโล่วงสีเหลี่ยมหันไปทางซ้าย", "scale": 0.04, "range": 70 },
+      { "key": "book3", "x": 50, "y": 270, "message": "หนังสือเล่ม 3: รูปปั้นถือดาบหันไปด้านหน้า", "scale": 0.04, "range": 70 },
+      { "key": "book4", "x": 265, "y": 170, "message": "หนังสือเล่ม 4: รูปปั้นถือธนูหันไปด้านหลัง", "scale": 0.04, "range": 70 },
+      { "key": "Asset 11", "x": 150, "y": 150, "message": "อ่านหนังสือที่อยู่บนชั้นแล้วทำตาม", "scale": 0.1, "range": 50 }
+    ],
+    "fires": [
+      { "x": 585, "y": 360, "key": "Asset 37", "scale": 0.16, "range": 70 },
+      { "x": 640, "y": 360, "key": "Asset 37", "scale": 0.16, "range": 70 },
+      { "x": 690, "y": 360, "key": "Asset 37", "scale": 0.16, "range": 70 },
+      { "x": 615, "y": 430, "key": "Asset 37", "scale": 0.16, "range": 70 },
+      { "x": 675, "y": 430, "key": "Asset 37", "scale": 0.16, "range": 70 }
+    ],
+    "enemies": [
+      {
+        "spawnX": 600,
+        "spawnY": 250,
+        "speed": 90,
+        "detectRadius": 250,
+        "hitbox": {
+          "hRadius": 15,
+          "vRadius": 10
+        }
+      },
+      {
+        "spawnX": 250,
+        "spawnY": 450,
+        "speed": 85,
+        "detectRadius": 200,
+        "hitbox": {
+          "hRadius": 15,
+          "vRadius": 10
+        }
+      },
+      {
+        "spawnX": 450,
+        "spawnY": 550,
+        "speed": 85,
+        "detectRadius": 200,
+        "hitbox": {
+          "hRadius": 15,
+          "vRadius": 10
+        }
+      }
+    ]
+  }
+}
